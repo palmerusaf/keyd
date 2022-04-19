@@ -220,6 +220,7 @@ static void execute_macro(struct keyboard *kbd, struct layer *dl, const struct m
 
 			update_mods(kbd, dl, mods);
 			send_key(kbd, code, 1);
+			usleep(100000);
 			send_key(kbd, code, 0);
 
 			break;
