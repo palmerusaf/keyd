@@ -91,6 +91,14 @@ capslock = overload(control, esc)
 
 # Remaps the escape key to capslock
 esc = capslock
+
+# Remaps the alt keys to meta
+leftalt = layer(meta)
+rightalt = layer(meta)
+
+# Remaps the meta key to alt
+leftmeta = layer(alt)
+rightmeta = layer(alt)
 ```
 
 3. Run `sudo systemctl restart keyd` to reload the config file.
